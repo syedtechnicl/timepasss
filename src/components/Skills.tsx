@@ -62,7 +62,6 @@ const skillCategories = [
 ]
 
 const Skills = () => {
-  const progressColor = useColorModeValue('blue.500', 'blue.200')
   const boxBg = useColorModeValue('white', 'gray.700')
   const tagBg = useColorModeValue('blue.50', 'blue.900')
 

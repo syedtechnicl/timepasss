@@ -6,9 +6,8 @@ import {
   Button,
   Image,
   useColorModeValue,
-  keyframes,
 } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
+import { motion, keyframes } from 'framer-motion'
 
 const MotionBox = motion(Box)
 
