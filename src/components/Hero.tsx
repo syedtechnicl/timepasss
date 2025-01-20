@@ -7,15 +7,20 @@ import {
   Image,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { motion, keyframes } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const MotionBox = motion(Box)
 
-const float = keyframes`
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
-`
+const floatAnimation = {
+  animate: {
+    y: [0, -20, 0],
+    transition: {
+      duration: 6,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }
+  }
+}
 
 const Hero = () => {
   const bgGradient = useColorModeValue(
@@ -79,9 +84,8 @@ const Hero = () => {
         <MotionBox
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          variants={floatAnimation}
           flex={1}
-          animation={`${float} 6s ease-in-out infinite`}
         >
           <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
