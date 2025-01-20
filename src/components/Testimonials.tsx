@@ -31,7 +31,7 @@ const testimonials = [
     name: 'Emily Rodriguez',
     position: 'Product Manager at InnovateLabs',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60',
-    content: 'Syed's problem-solving abilities are remarkable. He not only delivered the features we needed but also suggested improvements that made our product even better.',
+    content: 'Syed\'s problem-solving abilities are remarkable. He not only delivered the features we needed but also suggested improvements that made our product even better.',
   },
 ]
 
